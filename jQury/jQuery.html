@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <style>
+        #main-title{
+            background-color: black;
+            color: white;
+            width: 100%;
+            border: 1px solid ;
+            border-radius: 12px;
+            text-align: center;
+        }
+        #main-title:hover{
+            background-color: rgb(164, 161, 161);
+
+        }
+        #change-title{
+            background-color: lightblue;
+
+            border: 1px solid lightblue;
+            border-radius: 12px;
+
+            margin: 10px 0 0 12px ;
+        }
+        #change-title:hover{
+            background-color: rgb(128, 200, 224);
+        }
+    </style>
+</head>
+<body>
+    <button id="main-title">Hi</button>
+    <button id="change-title">change title</button>
+    <script>
+        $(document).ready(function(){
+            $('#chnage-title').click(function(){
+                $("#main-title").text("Appriciate it teacher for all of your knowledge that you've given to all of us.")
+
+            })
+        })
+    </script>
+    
+</body>
+</html>
